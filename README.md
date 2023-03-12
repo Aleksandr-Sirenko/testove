@@ -20,58 +20,58 @@ Before starting the installation process, make sure that your system meets the f
 
 ## Installation
 
-Clone the project repository to your local machine using the following command:
+1. Clone the project repository to your local machine using the following command:
 	
-	git clone https://github.com/Aleksandr-Sirenko/testove.git
+		git clone https://github.com/Aleksandr-Sirenko/testove.git
 
-Navigate to the project directory:
+1. Navigate to the project directory:
 
-	cd testove
+		cd testove
 
-Install the PHP dependencies using the following command:
+1. Install the PHP dependencies using the following command:
 
-	composer install
+		composer install
 
-Install the NPM dependencies using the following command:
+1. Install the NPM dependencies using the following command:
 
-	npm install
+		npm install
 
-Copy the .env.example file to .env:
+1. Copy the .env.example file to .env:
 
-	cp .env.example .env
+		cp .env.example .env
 
-Generate a new application key using the following command:
+1. Generate a new application key using the following command:
 
-	php artisan key:generate
+		php artisan key:generate
 
-Configure your environment in the .env file. Set the database name, username, and password, as well as the Google Client ID and Google Client Secret
+1. Configure your environment in the .env file. Set the database name, username, and password, as well as the Google Client ID and Google Client Secret
 
-	DB_DATABASE=your_database_name
+		DB_DATABASE=your_database_name
 
-	DB_USERNAME=your_database_username
+		DB_USERNAME=your_database_username
 
-	DB_PASSWORD=your_database_password
+		DB_PASSWORD=your_database_password
 
-	GOOGLE_CLIENT_ID=your_google_client_id
+		GOOGLE_CLIENT_ID=your_google_client_id
 
-	GOOGLE_CLIENT_SECRET=your_google_client_secret
+		GOOGLE_CLIENT_SECRET=your_google_client_secret
 
-Create a new database for your project.
+1. Create a new database for your project.
 
-Run the database migrations using the following command:
+1. Run the database migrations using the following command:
 
-	php artisan migrate
+		php artisan migrate
 
-Build the frontend assets using the following command:
+1. Build the frontend assets using the following command:
 
-	npm run build
+		npm run build
 
-Start the Laravel development server using the following command:
+1. Start the Laravel development server using the following command:
 
-	php artisan serve
+		php artisan serve
 	
-Open your web browser and enter the following URL:
+1. Open your web browser and enter the following URL:
 
-	http://localhost:8000
+		http://localhost:8000
 
 You should see the home page of the project.
